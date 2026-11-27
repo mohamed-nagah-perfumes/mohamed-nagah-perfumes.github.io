@@ -13067,7 +13067,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   ];
 
   // src/photos/qr.png
-  var qr_default = "./assets/K24VJVW6.png";
+  var qr_default = "./assets/LLBZL5QE.png";
 
   // src/photos/hero.png
   var hero_default = "./assets/WSENU2QH.png";
@@ -13081,17 +13081,27 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   function kindLabel(kind) {
     return kind === "spray" ? "\u0633\u0628\u0631\u0627\u064A" : "\u0639\u0637\u0631";
   }
-  function buildOrderMessage(item, customer, phone, address, qty, notes) {
+  var CartCtx = import_react30.default.createContext(null);
+  var useCart = () => import_react30.default.useContext(CartCtx);
+  function byN(n) {
+    return products.find((p) => p.n === n);
+  }
+  function buildCartMessage(cart, customer, phone, address, notes) {
+    const entries = Object.entries(cart).filter(([, q2]) => q2 > 0);
     const lines = [
       "\u0637\u0644\u0628 \u062C\u062F\u064A\u062F \u0645\u0646 \u0645\u0648\u0642\u0639 " + STORE.name,
       "",
-      `\u0627\u0644\u0645\u0646\u062A\u062C: ${item.name}`,
-      `\u0627\u0644\u0643\u0648\u062F: ${item.code}`,
-      `\u0627\u0644\u0643\u0645\u064A\u0629: ${qty}`
+      entries.length > 1 ? `\u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A (${entries.length}):` : "\u0627\u0644\u0645\u0646\u062A\u062C:"
     ];
-    if (SHOW_PRICES && item.price) {
-      lines.push(`\u0627\u0644\u0633\u0639\u0631: ${item.price} \u062C\u0646\u064A\u0647`);
-      lines.push(`\u0627\u0644\u0625\u062C\u0645\u0627\u0644\u064A: ${item.price * qty} \u062C\u0646\u064A\u0647`);
+    entries.forEach(([ns2, q2], i) => {
+      const item = byN(Number(ns2));
+      const base = `${item.name} \u2014 \u0643\u0648\u062F: ${item.code} \u2014 \u0627\u0644\u0643\u0645\u064A\u0629: ${q2}`;
+      lines.push(entries.length > 1 ? `${i + 1}) ${base}` : base);
+      if (SHOW_PRICES && item.price) lines.push(`   \u0627\u0644\u0633\u0639\u0631: ${item.price} \u062C\u0646\u064A\u0647 \xD7 ${q2} = ${item.price * q2} \u062C\u0646\u064A\u0647`);
+    });
+    if (SHOW_PRICES) {
+      const total = entries.reduce((s, [ns2, q2]) => s + (byN(Number(ns2)).price || 0) * q2, 0);
+      if (total > 0) lines.push("", `\u0627\u0644\u0625\u062C\u0645\u0627\u0644\u064A: ${total} \u062C\u0646\u064A\u0647`);
     }
     lines.push(
       "",
@@ -13102,43 +13112,64 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     if (notes.trim()) lines.push(`\u0645\u0644\u0627\u062D\u0638\u0627\u062A: ${notes.trim()}`);
     return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
   }
-  function OrderSheet({ item, onClose }) {
+  function CartSheet({ onClose }) {
+    const { cart, setQty, remove, clear } = useCart();
     const [customer, setCustomer] = (0, import_react30.useState)("");
     const [phone, setPhone] = (0, import_react30.useState)("");
     const [address, setAddress] = (0, import_react30.useState)("");
-    const [qty, setQty] = (0, import_react30.useState)(1);
     const [notes, setNotes] = (0, import_react30.useState)("");
     const [tried, setTried] = (0, import_react30.useState)(false);
     const [sent, setSent] = (0, import_react30.useState)(false);
+    const entries = Object.entries(cart).filter(([, q2]) => q2 > 0);
     const customerOk = customer.trim().length >= 3;
     const phoneOk = PHONE_RE.test(phone.trim());
     const addressOk = address.trim().length >= 5;
-    const ready = customerOk && phoneOk && addressOk;
-    const waUrl = buildOrderMessage(item, customer, phone, address, qty, notes);
+    const ready = customerOk && phoneOk && addressOk && entries.length > 0;
+    const waUrl = buildCartMessage(cart, customer, phone, address, notes);
     const submit = () => {
       setTried(true);
       if (!ready) return;
       window.open(waUrl, "_blank", "noopener");
       setSent(true);
     };
-    return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-sheet-wrap", role: "dialog", "aria-modal": "true", "aria-label": "\u0646\u0645\u0648\u0630\u062C \u0627\u0644\u0637\u0644\u0628", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-sheet-backdrop", onClick: onClose }),
+    const closeAll = () => {
+      if (sent) clear();
+      onClose();
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-sheet-wrap", role: "dialog", "aria-modal": "true", "aria-label": "\u0637\u0644\u0628\u0643", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-sheet-backdrop", onClick: closeAll }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-sheet", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-sheet-handle" }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-sheet-head", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0625\u062A\u0645\u0627\u0645 \u0627\u0644\u0637\u0644\u0628" }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-sheet-close", onClick: onClose, "aria-label": "\u0625\u063A\u0644\u0627\u0642", children: "\u2715" })
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0637\u0644\u0628\u0643" }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-sheet-close", onClick: closeAll, "aria-label": "\u0625\u063A\u0644\u0627\u0642", children: "\u2715" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { className: "lx-sheet-product", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: item.name }),
-          SHOW_PRICES && item.price ? ` \u2014 ${item.price} \u062C\u0646\u064A\u0647` : ""
-        ] }),
-        sent ? /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-sheet-sent", children: [
+        entries.length === 0 && !sent ? /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-cart-empty", children: "\u0637\u0644\u0628\u0643 \u0641\u0627\u0631\u063A \u062D\u0627\u0644\u064A\u064B\u0627 \u2014 \u062A\u0635\u0641\u062D \u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C \u0648\u0627\u0636\u063A\u0637 \xAB\u0623\u0636\u0641 \u0625\u0644\u0649 \u0627\u0644\u0637\u0644\u0628\xBB \u0639\u0644\u0649 \u0623\u064A \u0645\u0646\u062A\u062C \u064A\u0639\u062C\u0628\u0643." }) : sent ? /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-sheet-sent", children: [
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: "\u0631\u0633\u0627\u0644\u0629 \u0627\u0644\u0637\u0644\u0628 \u062C\u0627\u0647\u0632\u0629 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628." }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: "\u0627\u0636\u063A\u0637 \u0625\u0631\u0633\u0627\u0644 \u062F\u0627\u062E\u0644 \u0648\u0627\u062A\u0633\u0627\u0628 \u0644\u064A\u0635\u0644 \u0637\u0644\u0628\u0643 \u0625\u0644\u0649 \u0627\u0644\u0645\u062A\u062C\u0631 \u2014 \u0627\u0644\u0637\u0644\u0628 \u0644\u0627 \u064A\u064F\u0639\u062A\u0628\u0631 \u0645\u0624\u0643\u062F\u064B\u0627 \u0625\u0644\u0627 \u0628\u0639\u062F \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0631\u0633\u0627\u0644\u0629." }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-btn-gold lx-sheet-wa", href: waUrl, target: "_blank", rel: "noreferrer", children: "\u0641\u062A\u062D \u0648\u0627\u062A\u0633\u0627\u0628 \u0628\u0627\u0644\u0637\u0644\u0628" }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-sheet-done", onClick: onClose, children: "\u0625\u063A\u0644\u0627\u0642" })
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-sheet-done", onClick: closeAll, children: "\u0625\u063A\u0644\u0627\u0642" })
         ] }) : /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-cart-list", children: entries.map(([ns2, q2]) => {
+            const item = byN(Number(ns2));
+            return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-cart-row", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-cart-thumb", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: item.photo, alt: "" }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-cart-info", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { className: "lx-cart-name", children: item.name }),
+                /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-cart-code", children: [
+                  "\u0643\u0648\u062F: ",
+                  /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { dir: "ltr", children: item.code }),
+                  SHOW_PRICES && item.price ? ` \u2014 ${item.price} \u062C\u0646\u064A\u0647` : ""
+                ] })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-qty lx-qty-sm", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", onClick: () => setQty(item.n, Math.min(99, q2 + 1)), "aria-label": "\u0632\u064A\u0627\u062F\u0629 \u0627\u0644\u0643\u0645\u064A\u0629", children: "+" }),
+                /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("b", { children: q2 }),
+                /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", onClick: () => q2 > 1 ? setQty(item.n, q2 - 1) : remove(item.n), "aria-label": "\u062A\u0642\u0644\u064A\u0644 \u0627\u0644\u0643\u0645\u064A\u0629", children: "\u2212" })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-cart-remove", onClick: () => remove(item.n), "aria-label": `\u062D\u0630\u0641 ${item.name} \u0645\u0646 \u0627\u0644\u0637\u0644\u0628`, children: "\u2715" })
+            ] }, ns2);
+          }) }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("label", { className: "lx-field", children: [
             /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u0627\u0644\u0627\u0633\u0645 \u0628\u0627\u0644\u0643\u0627\u0645\u0644" }),
             /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("input", { value: customer, onChange: (e2) => setCustomer(e2.target.value), placeholder: "\u0627\u0633\u0645\u0643 \u0627\u0644\u0643\u0627\u0645\u0644" }),
@@ -13154,22 +13185,64 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("input", { value: address, onChange: (e2) => setAddress(e2.target.value), placeholder: "\u0645\u062B\u0627\u0644: \u0627\u0644\u0642\u0627\u0647\u0631\u0629\u060C \u0645\u062F\u064A\u0646\u0629 \u0646\u0635\u0631\u060C \u0634\u0627\u0631\u0639 \u0639\u0628\u0627\u0633 \u0627\u0644\u0639\u0642\u0627\u062F" }),
             tried && !addressOk && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("em", { className: "lx-err", children: "\u0627\u0643\u062A\u0628 \u0627\u0644\u0645\u062D\u0627\u0641\u0638\u0629 \u0648\u0627\u0644\u0645\u0646\u0637\u0642\u0629 \u0648\u0627\u0644\u0639\u0646\u0648\u0627\u0646." })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-field", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u0627\u0644\u0643\u0645\u064A\u0629" }),
-            /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-qty", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", onClick: () => setQty(Math.min(99, qty + 1)), "aria-label": "\u0632\u064A\u0627\u062F\u0629 \u0627\u0644\u0643\u0645\u064A\u0629", children: "+" }),
-              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("b", { children: qty }),
-              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", onClick: () => setQty(Math.max(1, qty - 1)), "aria-label": "\u062A\u0642\u0644\u064A\u0644 \u0627\u0644\u0643\u0645\u064A\u0629", children: "\u2212" })
-            ] })
-          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("label", { className: "lx-field", children: [
             /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u0645\u0644\u0627\u062D\u0638\u0627\u062A (\u0627\u062E\u062A\u064A\u0627\u0631\u064A)" }),
-            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("input", { value: notes, onChange: (e2) => setNotes(e2.target.value), placeholder: "\u0648\u0642\u062A \u0627\u0644\u062A\u0648\u0635\u064A\u0644\u060C \u0645\u0646\u062A\u062C\u0627\u062A \u0625\u0636\u0627\u0641\u064A\u0629\u2026" })
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("input", { value: notes, onChange: (e2) => setNotes(e2.target.value), placeholder: "\u0648\u0642\u062A \u0627\u0644\u062A\u0648\u0635\u064A\u0644\u060C \u062A\u063A\u0644\u064A\u0641 \u0647\u062F\u064A\u0629\u2026" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-btn-gold lx-sheet-submit", onClick: submit, children: "\u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("button", { type: "button", className: "lx-btn-gold lx-sheet-submit", onClick: submit, children: [
+            "\u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628 (",
+            entries.length,
+            " ",
+            entries.length === 1 ? "\u0645\u0646\u062A\u062C" : "\u0645\u0646\u062A\u062C\u0627\u062A",
+            ")"
+          ] })
         ] })
       ] })
     ] });
+  }
+  function AddBtn({ n, small }) {
+    const { cart, add, openCart } = useCart();
+    const inCart = (cart[n] || 0) > 0;
+    const onClick = (e2) => {
+      e2.preventDefault();
+      e2.stopPropagation();
+      add(n);
+    };
+    if (small) {
+      return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
+        "button",
+        {
+          type: "button",
+          className: inCart ? "lx-add-btn is-added" : "lx-add-btn",
+          onClick,
+          "aria-label": inCart ? "\u0641\u064A \u0637\u0644\u0628\u0643 \u2014 \u0623\u0636\u0641 \u0648\u0627\u062D\u062F\u0629 \u0623\u062E\u0631\u0649" : "\u0623\u0636\u0641 \u0625\u0644\u0649 \u0627\u0644\u0637\u0644\u0628",
+          children: inCart ? `\u2713 ${cart[n]}` : "+"
+        }
+      );
+    }
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-lp-actions", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-btn-gold lx-lp-cta", onClick: (e2) => {
+        e2.preventDefault();
+        add(n);
+        openCart();
+      }, children: "\u0627\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" }),
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: inCart ? "lx-btn-outline is-added" : "lx-btn-outline", onClick, children: inCart ? `\u2713 \u0641\u064A \u0637\u0644\u0628\u0643 (${cart[n]})` : "\u0623\u0636\u0641 \u0625\u0644\u0649 \u0627\u0644\u0637\u0644\u0628" })
+    ] });
+  }
+  function CartButton() {
+    const { count, openCart } = useCart();
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("button", { type: "button", className: "lx-cart-btn", onClick: openCart, "aria-label": `\u0637\u0644\u0628\u0643 \u2014 ${count} \u0645\u0646\u062A\u062C`, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("svg", { viewBox: "0 0 24 24", width: "21", height: "21", fill: "none", stroke: "currentColor", strokeWidth: "1.8", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { d: "M6 7h12l1.5 13.5a1 1 0 0 1-1 1.1h-13a1 1 0 0 1-1-1.1L6 7z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { d: "M9 10V6a3 3 0 0 1 6 0v4" })
+      ] }),
+      count > 0 && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-cart-count", children: count })
+    ] });
+  }
+  function Toast() {
+    const { toast } = useCart();
+    if (!toast) return null;
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-toast", role: "status", children: toast });
   }
   function Header() {
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-header", children: [
@@ -13180,7 +13253,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("em", { children: STORE.latin })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-header-wa", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: "\u0648\u0627\u062A\u0633\u0627\u0628" })
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-header-actions", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(CartButton, {}),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-header-wa", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: "\u0648\u0627\u062A\u0633\u0627\u0628" })
+      ] })
     ] });
   }
   function FloatingWa() {
@@ -13188,7 +13264,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
   function Tile({ item }) {
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Link, { to: `/p/${item.n}`, className: "lx-tile lx-anim", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-photo", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: item.photo, alt: item.name, loading: "lazy" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-photo", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: item.photo, alt: item.name, loading: "lazy" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: item.n, small: true })
+      ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: item.name }) }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-row", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-meta", children: item.size }),
@@ -13219,7 +13298,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-hero-overlay", children: [
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-hero-kicker", children: STORE.latin }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h1", { className: "lx-title", children: STORE.name }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-sub", children: "\u062A\u0634\u0643\u064A\u0644\u0629 \u0641\u0627\u062E\u0631\u0629 \u0645\u0646 \u0627\u0644\u0639\u0637\u0648\u0631 \u0648\u0627\u0644\u0633\u0628\u0631\u0627\u064A. \u062A\u0635\u0641\u062D \u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C \u0648\u0627\u0637\u0644\u0628 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628 \u0628\u0636\u063A\u0637\u0629 \u0648\u0627\u062D\u062F\u0629." }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-sub", children: "\u062A\u0634\u0643\u064A\u0644\u0629 \u0641\u0627\u062E\u0631\u0629 \u0645\u0646 \u0627\u0644\u0639\u0637\u0648\u0631 \u0648\u0627\u0644\u0633\u0628\u0631\u0627\u064A. \u0623\u0636\u0641 \u0645\u0627 \u064A\u0639\u062C\u0628\u0643 \u0625\u0644\u0649 \u0637\u0644\u0628\u0643 \u0648\u0623\u0631\u0633\u0644\u0647 \u0643\u0644\u0647 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628 \u0628\u0636\u063A\u0637\u0629 \u0648\u0627\u062D\u062F\u0629." }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-btn-gold lx-hero-cta", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: "\u0627\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
         ] })
       ] }),
@@ -13238,7 +13317,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-section-line" })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-strip", children: featured.map((p) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Link, { to: `/p/${p.n}`, className: "lx-card lx-anim", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-card-photo", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: p.photo, alt: p.name, loading: "lazy" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-card-photo", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: p.photo, alt: p.name, loading: "lazy" }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: p.n, small: true })
+        ] }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-card-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: p.name }) }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-card-meta", children: [
           p.size,
@@ -13278,7 +13360,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-qr", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: qr_default, alt: "\u0643\u0648\u062F QR \u064A\u0641\u062A\u062D \u0645\u0648\u0642\u0639 \u0645\u062D\u0645\u062F \u0646\u062C\u0627\u062D \u0644\u0644\u0639\u0637\u0648\u0631" }) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-closing", children: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u063A\u064A\u0631 \u0645\u0639\u0631\u0648\u0636\u0629 \u062D\u0627\u0644\u064A\u064B\u0627 \u2014 \u0627\u0633\u0623\u0644 \u0639\u0646 \u0633\u0639\u0631 \u0623\u064A \u0645\u0646\u062A\u062C \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628. \u0627\u0644\u0637\u0644\u0628 \u064A\u0635\u0644 \u0631\u0633\u0627\u0644\u0629 \u062C\u0627\u0647\u0632\u0629 \u0628\u0627\u0633\u0645 \u0627\u0644\u0645\u0646\u062A\u062C \u0648\u0643\u0648\u062F\u0647." })
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-closing", children: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u063A\u064A\u0631 \u0645\u0639\u0631\u0648\u0636\u0629 \u062D\u0627\u0644\u064A\u064B\u0627 \u2014 \u0627\u0633\u0623\u0644 \u0639\u0646 \u0633\u0639\u0631 \u0623\u064A \u0645\u0646\u062A\u062C \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628. \u0627\u0644\u0637\u0644\u0628 \u064A\u0635\u0644 \u0631\u0633\u0627\u0644\u0629 \u062C\u0627\u0647\u0632\u0629 \u0628\u0623\u0633\u0645\u0627\u0621 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A \u0648\u0623\u0643\u0648\u0627\u062F\u0647\u0627 \u0648\u0643\u0645\u064A\u0627\u062A\u0647\u0627." })
     ] });
   }
   function Section({ title, children, defaultOpen }) {
@@ -13292,7 +13374,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ] });
   }
   function Detail({ item }) {
-    const [ordering, setOrdering] = (0, import_react30.useState)(false);
     const photos = item.photos && item.photos.length > 0 ? item.photos : [item.photo];
     const [active, setActive] = (0, import_react30.useState)(0);
     (0, import_react30.useEffect)(() => {
@@ -13335,7 +13416,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               " \u062C\u0646\u064A\u0647"
             ] })
           ] }) : /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-lp-askprice", children: "\u0627\u0644\u0633\u0639\u0631 \u0639\u0646\u062F \u0627\u0644\u0637\u0644\u0628 \u2014 \u0627\u0633\u0623\u0644 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("button", { type: "button", className: "lx-btn-gold lx-lp-cta", onClick: () => setOrdering(true), children: "\u0627\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: item.n })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-lp-sections", children: [
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Section, { title: "\u0645\u0643\u0648\u0646\u0627\u062A \u0627\u0644\u0639\u0637\u0631 \u0648\u0627\u0644\u0646\u0648\u062A\u0627\u062A \u0627\u0644\u0639\u0637\u0631\u064A\u0629", defaultOpen: !!item.notes, children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: item.notes || "\u062A\u0641\u0627\u0635\u064A\u0644 \u0627\u0644\u0646\u0648\u062A\u0627\u062A \u0627\u0644\u0639\u0637\u0631\u064A\u0629 \u0644\u0647\u0630\u0627 \u0627\u0644\u0645\u0646\u062A\u062C \u0633\u062A\u064F\u0636\u0627\u0641 \u0642\u0631\u064A\u0628\u064B\u0627." }) }),
@@ -13358,7 +13439,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           ] })
         ] })
       ] }),
-      ordering && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(OrderSheet, { item, onClose: () => setOrdering(false) }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { className: "lx-closing", children: [
         STORE.name,
         " \u2014 \u0627\u0644\u0637\u0644\u0628 \u0648\u0627\u0644\u0627\u0633\u062A\u0641\u0633\u0627\u0631 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628 ",
@@ -13368,14 +13448,42 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     ] });
   }
   function App() {
-    return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(cu, { lang: "ar", dir: "rtl", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx", children: [
+    const [cart, setCart] = (0, import_react30.useState)({});
+    const [cartOpen, setCartOpen] = (0, import_react30.useState)(false);
+    const [toast, setToast] = (0, import_react30.useState)("");
+    const toastTimer = (0, import_react30.useRef)(null);
+    const flash = (msg) => {
+      setToast(msg);
+      if (toastTimer.current) clearTimeout(toastTimer.current);
+      toastTimer.current = setTimeout(() => setToast(""), 1600);
+    };
+    const value = {
+      cart,
+      count: Object.values(cart).reduce((s, q2) => s + q2, 0),
+      add: (n) => {
+        setCart((c) => ({ ...c, [n]: (c[n] || 0) + 1 }));
+        flash("\u0623\u064F\u0636\u064A\u0641 \u0625\u0644\u0649 \u0637\u0644\u0628\u0643 \u2713");
+      },
+      setQty: (n, q2) => setCart((c) => ({ ...c, [n]: q2 })),
+      remove: (n) => setCart((c) => {
+        const next = { ...c };
+        delete next[n];
+        return next;
+      }),
+      clear: () => setCart({}),
+      openCart: () => setCartOpen(true),
+      toast
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(cu, { lang: "ar", dir: "rtl", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(CartCtx.Provider, { value, children: /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx", children: [
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Header, {}),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Routes, { children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Home, {}) }),
         products.map((p) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Route, { path: `/p/${p.n}`, element: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Detail, { item: p }) }, p.n))
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(FloatingWa, {})
-    ] }) });
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(FloatingWa, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Toast, {}),
+      cartOpen && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(CartSheet, { onClose: () => setCartOpen(false) })
+    ] }) }) });
   }
 
   // src/main.tsx
