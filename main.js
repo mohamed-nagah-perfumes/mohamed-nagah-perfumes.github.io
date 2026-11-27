@@ -13076,7 +13076,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var import_jsx_runtime27 = __toESM(require_jsx_runtime());
   var WA_NUMBER = STORE.wa;
   var WA_DISPLAY = STORE.waDisplay;
-  var FEATURED = [17, 19, 57, 61, 91, 68, 84, 80, 82, 115];
   var PHONE_RE = /^01[0-9]{9}$/;
   function kindLabel(kind) {
     return kind === "spray" ? "\u0633\u0628\u0631\u0627\u064A" : "\u0639\u0637\u0631";
@@ -13301,7 +13300,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       { key: "women", label: "\u062D\u0631\u064A\u0645\u064A" },
       { key: "unisex", label: "\u0644\u0644\u062C\u0646\u0633\u064A\u0646" }
     ];
-    const featured = FEATURED.map((n) => products.find((p) => p.n === n)).filter(Boolean);
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-hero", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { className: "lx-hero-img", src: hero_default, alt: "", "aria-hidden": "true" }),
@@ -13331,6 +13329,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("b", { children: "\u2726" }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u0637\u0644\u0628 \u0633\u0631\u064A\u0639 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
       ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-section-head", id: "catalog", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
+          "\u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C",
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0643\u0644 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A" })
+      ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-cats", role: "group", "aria-label": "\u0627\u0644\u0623\u0642\u0633\u0627\u0645", children: cats.map((c) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
         "button",
         {
@@ -13341,38 +13347,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         },
         c.key
       )) }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-section-head", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
-          "\u0627\u062E\u062A\u064A\u0627\u0631\u0627\u062A\u0646\u0627",
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0645\u062E\u062A\u0627\u0631\u0627\u062A \u0645\u0645\u064A\u0632\u0629" })
-      ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-strip", children: featured.map((p) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Link, { to: `/p/${p.n}`, className: "lx-card lx-anim", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-photo", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(PhotoFrame, { item: p }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: p.n, small: true })
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-body", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: p.name }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-meta", children: [
-            p.size,
-            " \xB7 ",
-            kindLabel(p.kind),
-            " \xB7 ",
-            genderLabel(p.g)
-          ] })
-        ] })
-      ] }, p.n)) }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-section-head", id: "catalog", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
-          "\u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C",
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
-        ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0643\u0644 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A" })
-      ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-tools", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
           "input",
