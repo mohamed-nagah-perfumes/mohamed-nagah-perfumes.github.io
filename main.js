@@ -12508,415 +12508,415 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var import_react30 = __toESM(require_react());
 
   // src/photos/p001.jpg
-  var p001_default = "./assets/PLO7TRXY.jpg";
+  var p001_default = "./photos/p001.jpg";
 
   // src/photos/p002.jpg
-  var p002_default = "./assets/PO3U3F7U.jpg";
+  var p002_default = "./photos/p002.jpg";
 
   // src/photos/p003.jpg
-  var p003_default = "./assets/WELW6T7W.jpg";
+  var p003_default = "./photos/p003.jpg";
 
   // src/photos/p004.jpg
-  var p004_default = "./assets/TR5EG4DQ.jpg";
+  var p004_default = "./photos/p004.jpg";
 
   // src/photos/p005.jpg
-  var p005_default = "./assets/G7VEWV6D.jpg";
+  var p005_default = "./photos/p005.jpg";
 
   // src/photos/p006.jpg
-  var p006_default = "./assets/TS775T4W.jpg";
+  var p006_default = "./photos/p006.jpg";
 
   // src/photos/p007.jpg
-  var p007_default = "./assets/5JULP454.jpg";
+  var p007_default = "./photos/p007.jpg";
 
   // src/photos/p008.jpg
-  var p008_default = "./assets/RUHLG3KW.jpg";
+  var p008_default = "./photos/p008.jpg";
 
   // src/photos/p009.jpg
-  var p009_default = "./assets/EZ23S7RJ.jpg";
+  var p009_default = "./photos/p009.jpg";
 
   // src/photos/p010.jpg
-  var p010_default = "./assets/VDLBFP3N.jpg";
+  var p010_default = "./photos/p010.jpg";
 
   // src/photos/p011.jpg
-  var p011_default = "./assets/SCDUGI4X.jpg";
+  var p011_default = "./photos/p011.jpg";
 
   // src/photos/p012.jpg
-  var p012_default = "./assets/UCZDTZJF.jpg";
+  var p012_default = "./photos/p012.jpg";
 
   // src/photos/p013.jpg
-  var p013_default = "./assets/6BFMAWLK.jpg";
+  var p013_default = "./photos/p013.jpg";
 
   // src/photos/p014.jpg
-  var p014_default = "./assets/4MSIA4NA.jpg";
+  var p014_default = "./photos/p014.jpg";
 
   // src/photos/p015.jpg
-  var p015_default = "./assets/3YBUQIFT.jpg";
+  var p015_default = "./photos/p015.jpg";
 
   // src/photos/p016.jpg
-  var p016_default = "./assets/TU3UVP2Q.jpg";
+  var p016_default = "./photos/p016.jpg";
 
   // src/photos/p017.jpg
-  var p017_default = "./assets/2AM7V5BL.jpg";
+  var p017_default = "./photos/p017.jpg";
 
   // src/photos/p018.jpg
-  var p018_default = "./assets/OJQABG7S.jpg";
+  var p018_default = "./photos/p018.jpg";
 
   // src/photos/p019.jpg
-  var p019_default = "./assets/ZD2CFMG4.jpg";
+  var p019_default = "./photos/p019.jpg";
 
   // src/photos/p020.jpg
-  var p020_default = "./assets/WQPHEUYY.jpg";
+  var p020_default = "./photos/p020.jpg";
 
   // src/photos/p021.jpg
-  var p021_default = "./assets/PJ7YEM2O.jpg";
+  var p021_default = "./photos/p021.jpg";
 
   // src/photos/p022.jpg
-  var p022_default = "./assets/BTD5DZAX.jpg";
+  var p022_default = "./photos/p022.jpg";
 
   // src/photos/p023.jpg
-  var p023_default = "./assets/NJZGGJ4G.jpg";
+  var p023_default = "./photos/p023.jpg";
 
   // src/photos/p024.jpg
-  var p024_default = "./assets/2DDZYB7A.jpg";
+  var p024_default = "./photos/p024.jpg";
 
   // src/photos/p025.jpg
-  var p025_default = "./assets/IVOTMJCS.jpg";
+  var p025_default = "./photos/p025.jpg";
 
   // src/photos/p026.jpg
-  var p026_default = "./assets/CSBSVHRM.jpg";
+  var p026_default = "./photos/p026.jpg";
 
   // src/photos/p027.jpg
-  var p027_default = "./assets/O5OL66X7.jpg";
+  var p027_default = "./photos/p027.jpg";
 
   // src/photos/p028.jpg
-  var p028_default = "./assets/RXFENIA4.jpg";
+  var p028_default = "./photos/p028.jpg";
 
   // src/photos/p029.jpg
-  var p029_default = "./assets/SQEPOTLL.jpg";
+  var p029_default = "./photos/p029.jpg";
 
   // src/photos/p030.jpg
-  var p030_default = "./assets/HUKIBN57.jpg";
+  var p030_default = "./photos/p030.jpg";
 
   // src/photos/p031.jpg
-  var p031_default = "./assets/QVOOPI57.jpg";
+  var p031_default = "./photos/p031.jpg";
 
   // src/photos/p032.jpg
-  var p032_default = "./assets/ZKBYKSE2.jpg";
+  var p032_default = "./photos/p032.jpg";
 
   // src/photos/p033.jpg
-  var p033_default = "./assets/BQ7IJ56B.jpg";
+  var p033_default = "./photos/p033.jpg";
 
   // src/photos/p034.jpg
-  var p034_default = "./assets/M2WRWEHF.jpg";
+  var p034_default = "./photos/p034.jpg";
 
   // src/photos/p035.jpg
-  var p035_default = "./assets/VDQ5JVNX.jpg";
+  var p035_default = "./photos/p035.jpg";
 
   // src/photos/p036.jpg
-  var p036_default = "./assets/LLWX7MBF.jpg";
+  var p036_default = "./photos/p036.jpg";
 
   // src/photos/p037.jpg
-  var p037_default = "./assets/NNHTHWFH.jpg";
+  var p037_default = "./photos/p037.jpg";
 
   // src/photos/p038.jpg
-  var p038_default = "./assets/6U2GRLVM.jpg";
+  var p038_default = "./photos/p038.jpg";
 
   // src/photos/p039.jpg
-  var p039_default = "./assets/GG2DMT4N.jpg";
+  var p039_default = "./photos/p039.jpg";
 
   // src/photos/p040.jpg
-  var p040_default = "./assets/4M2FCY2O.jpg";
+  var p040_default = "./photos/p040.jpg";
 
   // src/photos/p041.jpg
-  var p041_default = "./assets/MEYWV4VX.jpg";
+  var p041_default = "./photos/p041.jpg";
 
   // src/photos/p042.jpg
-  var p042_default = "./assets/OHW5JGPM.jpg";
+  var p042_default = "./photos/p042.jpg";
 
   // src/photos/p043.jpg
-  var p043_default = "./assets/LGJTUSGP.jpg";
+  var p043_default = "./photos/p043.jpg";
 
   // src/photos/p044.jpg
-  var p044_default = "./assets/CJR7DAZ4.jpg";
+  var p044_default = "./photos/p044.jpg";
 
   // src/photos/p045.jpg
-  var p045_default = "./assets/T2PNCSA7.jpg";
+  var p045_default = "./photos/p045.jpg";
 
   // src/photos/p046.jpg
-  var p046_default = "./assets/RE5YQ3EW.jpg";
+  var p046_default = "./photos/p046.jpg";
 
   // src/photos/p047.jpg
-  var p047_default = "./assets/XN27PQYD.jpg";
+  var p047_default = "./photos/p047.jpg";
 
   // src/photos/p048.jpg
-  var p048_default = "./assets/7LJADXXP.jpg";
+  var p048_default = "./photos/p048.jpg";
 
   // src/photos/p049.jpg
-  var p049_default = "./assets/GL4I6J5X.jpg";
+  var p049_default = "./photos/p049.jpg";
 
   // src/photos/p050.jpg
-  var p050_default = "./assets/3UWLT5RA.jpg";
+  var p050_default = "./photos/p050.jpg";
 
   // src/photos/p051.jpg
-  var p051_default = "./assets/6BDLRGFJ.jpg";
+  var p051_default = "./photos/p051.jpg";
 
   // src/photos/p052.jpg
-  var p052_default = "./assets/ZTJM6UIK.jpg";
+  var p052_default = "./photos/p052.jpg";
 
   // src/photos/p053.jpg
-  var p053_default = "./assets/YX5LCLX3.jpg";
+  var p053_default = "./photos/p053.jpg";
 
   // src/photos/p054.jpg
-  var p054_default = "./assets/77PVWPFP.jpg";
+  var p054_default = "./photos/p054.jpg";
 
   // src/photos/p055.jpg
-  var p055_default = "./assets/5J2EOVMG.jpg";
+  var p055_default = "./photos/p055.jpg";
 
   // src/photos/p056.jpg
-  var p056_default = "./assets/PJB5P6TQ.jpg";
+  var p056_default = "./photos/p056.jpg";
 
   // src/photos/p057.jpg
-  var p057_default = "./assets/ERJ6GXXA.jpg";
+  var p057_default = "./photos/p057.jpg";
 
   // src/photos/p058.jpg
-  var p058_default = "./assets/FIXDE3XK.jpg";
+  var p058_default = "./photos/p058.jpg";
 
   // src/photos/p059.jpg
-  var p059_default = "./assets/JHP5LU74.jpg";
+  var p059_default = "./photos/p059.jpg";
 
   // src/photos/p060.jpg
-  var p060_default = "./assets/JY5YUEUX.jpg";
+  var p060_default = "./photos/p060.jpg";
 
   // src/photos/p061.jpg
-  var p061_default = "./assets/PPN4UQY5.jpg";
+  var p061_default = "./photos/p061.jpg";
 
   // src/photos/p062.jpg
-  var p062_default = "./assets/FFUTNIT4.jpg";
+  var p062_default = "./photos/p062.jpg";
 
   // src/photos/p063.jpg
-  var p063_default = "./assets/DDRFRV2Z.jpg";
+  var p063_default = "./photos/p063.jpg";
 
   // src/photos/p064.jpg
-  var p064_default = "./assets/FCBZCKIX.jpg";
+  var p064_default = "./photos/p064.jpg";
 
   // src/photos/p065.jpg
-  var p065_default = "./assets/2FNGQKWG.jpg";
+  var p065_default = "./photos/p065.jpg";
 
   // src/photos/p066.jpg
-  var p066_default = "./assets/J3JIT67S.jpg";
+  var p066_default = "./photos/p066.jpg";
 
   // src/photos/p067.jpg
-  var p067_default = "./assets/OP4TTVGT.jpg";
+  var p067_default = "./photos/p067.jpg";
 
   // src/photos/p068.jpg
-  var p068_default = "./assets/FAPVJ4LO.jpg";
+  var p068_default = "./photos/p068.jpg";
 
   // src/photos/p069.jpg
-  var p069_default = "./assets/S7Y2XRHU.jpg";
+  var p069_default = "./photos/p069.jpg";
 
   // src/photos/p070.jpg
-  var p070_default = "./assets/Q6O5XKGY.jpg";
+  var p070_default = "./photos/p070.jpg";
 
   // src/photos/p071.jpg
-  var p071_default = "./assets/VFI3DA7N.jpg";
+  var p071_default = "./photos/p071.jpg";
 
   // src/photos/p072.jpg
-  var p072_default = "./assets/WPOU6W2O.jpg";
+  var p072_default = "./photos/p072.jpg";
 
   // src/photos/p073.jpg
-  var p073_default = "./assets/EH2M47AY.jpg";
+  var p073_default = "./photos/p073.jpg";
 
   // src/photos/p074.jpg
-  var p074_default = "./assets/4YIPYLOK.jpg";
+  var p074_default = "./photos/p074.jpg";
 
   // src/photos/p075.jpg
-  var p075_default = "./assets/LMH3IZS4.jpg";
+  var p075_default = "./photos/p075.jpg";
 
   // src/photos/p076.jpg
-  var p076_default = "./assets/4NHIXTZZ.jpg";
+  var p076_default = "./photos/p076.jpg";
 
   // src/photos/p077.jpg
-  var p077_default = "./assets/B3JUUBFC.jpg";
+  var p077_default = "./photos/p077.jpg";
 
   // src/photos/p078.jpg
-  var p078_default = "./assets/GZWWFEKS.jpg";
+  var p078_default = "./photos/p078.jpg";
 
   // src/photos/p079.jpg
-  var p079_default = "./assets/XJZLID67.jpg";
+  var p079_default = "./photos/p079.jpg";
 
   // src/photos/p080.jpg
-  var p080_default = "./assets/EKPGMQGF.jpg";
+  var p080_default = "./photos/p080.jpg";
 
   // src/photos/p081.jpg
-  var p081_default = "./assets/4YKUPTC7.jpg";
+  var p081_default = "./photos/p081.jpg";
 
   // src/photos/p082.jpg
-  var p082_default = "./assets/JAFGMHKR.jpg";
+  var p082_default = "./photos/p082.jpg";
 
   // src/photos/p083.jpg
-  var p083_default = "./assets/YC55WS4Z.jpg";
+  var p083_default = "./photos/p083.jpg";
 
   // src/photos/p084.jpg
-  var p084_default = "./assets/PQROJNMZ.jpg";
+  var p084_default = "./photos/p084.jpg";
 
   // src/photos/p085.jpg
-  var p085_default = "./assets/BDZCKUAE.jpg";
+  var p085_default = "./photos/p085.jpg";
 
   // src/photos/p086.jpg
-  var p086_default = "./assets/K3NJCHH5.jpg";
+  var p086_default = "./photos/p086.jpg";
 
   // src/photos/p087.jpg
-  var p087_default = "./assets/SNQ6QQ6Z.jpg";
+  var p087_default = "./photos/p087.jpg";
 
   // src/photos/p088.jpg
-  var p088_default = "./assets/MZKOFNVU.jpg";
+  var p088_default = "./photos/p088.jpg";
 
   // src/photos/p089.jpg
-  var p089_default = "./assets/BDR4GO7H.jpg";
+  var p089_default = "./photos/p089.jpg";
 
   // src/photos/p090.jpg
-  var p090_default = "./assets/THUQGDI7.jpg";
+  var p090_default = "./photos/p090.jpg";
 
   // src/photos/p091.jpg
-  var p091_default = "./assets/MEV4GNPQ.jpg";
+  var p091_default = "./photos/p091.jpg";
 
   // src/photos/p092.jpg
-  var p092_default = "./assets/KWSZLXU4.jpg";
+  var p092_default = "./photos/p092.jpg";
 
   // src/photos/p093.jpg
-  var p093_default = "./assets/QIA33YRG.jpg";
+  var p093_default = "./photos/p093.jpg";
 
   // src/photos/p094.jpg
-  var p094_default = "./assets/TK3HXKHM.jpg";
+  var p094_default = "./photos/p094.jpg";
 
   // src/photos/p095.jpg
-  var p095_default = "./assets/7QGZN4UH.jpg";
+  var p095_default = "./photos/p095.jpg";
 
   // src/photos/p096.jpg
-  var p096_default = "./assets/U633KYFB.jpg";
+  var p096_default = "./photos/p096.jpg";
 
   // src/photos/p097.jpg
-  var p097_default = "./assets/QJ6PDUKM.jpg";
+  var p097_default = "./photos/p097.jpg";
 
   // src/photos/p098.jpg
-  var p098_default = "./assets/E2PXRONP.jpg";
+  var p098_default = "./photos/p098.jpg";
 
   // src/photos/p099.jpg
-  var p099_default = "./assets/QYNZYPFH.jpg";
+  var p099_default = "./photos/p099.jpg";
 
   // src/photos/p100.jpg
-  var p100_default = "./assets/5KBFVKMU.jpg";
+  var p100_default = "./photos/p100.jpg";
 
   // src/photos/p101.jpg
-  var p101_default = "./assets/N6C6IGF7.jpg";
+  var p101_default = "./photos/p101.jpg";
 
   // src/photos/p102.jpg
-  var p102_default = "./assets/EU7KKM5O.jpg";
+  var p102_default = "./photos/p102.jpg";
 
   // src/photos/p103.jpg
-  var p103_default = "./assets/IQSPMWZY.jpg";
+  var p103_default = "./photos/p103.jpg";
 
   // src/photos/p104.jpg
-  var p104_default = "./assets/RTDOFAQF.jpg";
+  var p104_default = "./photos/p104.jpg";
 
   // src/photos/p105.jpg
-  var p105_default = "./assets/5A4SHAPC.jpg";
+  var p105_default = "./photos/p105.jpg";
 
   // src/photos/p106.jpg
-  var p106_default = "./assets/NYRRBHHH.jpg";
+  var p106_default = "./photos/p106.jpg";
 
   // src/photos/p107.jpg
-  var p107_default = "./assets/KLSHSUWN.jpg";
+  var p107_default = "./photos/p107.jpg";
 
   // src/photos/p108.jpg
-  var p108_default = "./assets/Y7C36XSF.jpg";
+  var p108_default = "./photos/p108.jpg";
 
   // src/photos/p109.jpg
-  var p109_default = "./assets/3TQR2CX2.jpg";
+  var p109_default = "./photos/p109.jpg";
 
   // src/photos/p110.jpg
-  var p110_default = "./assets/OBAT2QRU.jpg";
+  var p110_default = "./photos/p110.jpg";
 
   // src/photos/p111.jpg
-  var p111_default = "./assets/2BQ3XNCQ.jpg";
+  var p111_default = "./photos/p111.jpg";
 
   // src/photos/p112.jpg
-  var p112_default = "./assets/M7EX2QGX.jpg";
+  var p112_default = "./photos/p112.jpg";
 
   // src/photos/p113.jpg
-  var p113_default = "./assets/SDFH652D.jpg";
+  var p113_default = "./photos/p113.jpg";
 
   // src/photos/p114.jpg
-  var p114_default = "./assets/F4ELP43N.jpg";
+  var p114_default = "./photos/p114.jpg";
 
   // src/photos/p115.jpg
-  var p115_default = "./assets/JHXS4UPD.jpg";
+  var p115_default = "./photos/p115.jpg";
 
   // src/photos/p116.jpg
-  var p116_default = "./assets/Q6MREYI7.jpg";
+  var p116_default = "./photos/p116.jpg";
 
   // src/photos/p117.jpg
-  var p117_default = "./assets/OFLV2BXJ.jpg";
+  var p117_default = "./photos/p117.jpg";
 
   // src/photos/p118.jpg
-  var p118_default = "./assets/Q3Q3CK6Z.jpg";
+  var p118_default = "./photos/p118.jpg";
 
   // src/photos/p119.jpg
-  var p119_default = "./assets/XEKWSMPF.jpg";
+  var p119_default = "./photos/p119.jpg";
 
   // src/photos/p120.jpg
-  var p120_default = "./assets/RK75Q4EM.jpg";
+  var p120_default = "./photos/p120.jpg";
 
   // src/photos/p121.jpg
-  var p121_default = "./assets/APPP2NGP.jpg";
+  var p121_default = "./photos/p121.jpg";
 
   // src/photos/p122.jpg
-  var p122_default = "./assets/DWUDIQF3.jpg";
+  var p122_default = "./photos/p122.jpg";
 
   // src/photos/p123.jpg
-  var p123_default = "./assets/3KV5NCLQ.jpg";
+  var p123_default = "./photos/p123.jpg";
 
   // src/photos/p124.jpg
-  var p124_default = "./assets/YEF4BWCN.jpg";
+  var p124_default = "./photos/p124.jpg";
 
   // src/photos/p125.jpg
-  var p125_default = "./assets/AS3CX4O3.jpg";
+  var p125_default = "./photos/p125.jpg";
 
   // src/photos/p126.jpg
-  var p126_default = "./assets/ZP76ZURG.jpg";
+  var p126_default = "./photos/p126.jpg";
 
   // src/photos/p127.jpg
-  var p127_default = "./assets/WMYPOHKY.jpg";
+  var p127_default = "./photos/p127.jpg";
 
   // src/photos/p128.jpg
-  var p128_default = "./assets/NIKMV67D.jpg";
+  var p128_default = "./photos/p128.jpg";
 
   // src/photos/p129.jpg
-  var p129_default = "./assets/3W5ICQWA.jpg";
+  var p129_default = "./photos/p129.jpg";
 
   // src/photos/p130.jpg
-  var p130_default = "./assets/UXB3PLQ7.jpg";
+  var p130_default = "./photos/p130.jpg";
 
   // src/photos/p131.jpg
-  var p131_default = "./assets/FSNBLSAQ.jpg";
+  var p131_default = "./photos/p131.jpg";
 
   // src/photos/p132.jpg
-  var p132_default = "./assets/Z3KWKYHQ.jpg";
+  var p132_default = "./photos/p132.jpg";
 
   // src/photos/p133.jpg
-  var p133_default = "./assets/JCG47UV5.jpg";
+  var p133_default = "./photos/p133.jpg";
 
   // src/photos/p134.jpg
-  var p134_default = "./assets/OE6U5IAH.jpg";
+  var p134_default = "./photos/p134.jpg";
 
   // src/photos/p135.jpg
-  var p135_default = "./assets/7BFB64YT.jpg";
+  var p135_default = "./photos/p135.jpg";
 
   // src/photos/p136.jpg
-  var p136_default = "./assets/IMJFTG4P.jpg";
+  var p136_default = "./photos/p136.jpg";
 
   // src/photos/p137.jpg
-  var p137_default = "./assets/IXXFTFKE.jpg";
+  var p137_default = "./photos/p137.jpg";
 
   // src/data.ts
   var SHOW_PRICES = false;
@@ -13067,10 +13067,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   ];
 
   // src/photos/qr.png
-  var qr_default = "./assets/LLBZL5QE.png";
+  var qr_default = "./photos/qr.png";
 
   // src/photos/hero.png
-  var hero_default = "./assets/WSENU2QH.png";
+  var hero_default = "./photos/hero.png";
 
   // src/App.tsx
   var import_jsx_runtime27 = __toESM(require_jsx_runtime());
@@ -13232,7 +13232,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   function CartButton() {
     const { count, openCart } = useCart();
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("button", { type: "button", className: "lx-cart-btn", onClick: openCart, "aria-label": `\u0637\u0644\u0628\u0643 \u2014 ${count} \u0645\u0646\u062A\u062C`, children: [
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("svg", { viewBox: "0 0 24 24", width: "21", height: "21", fill: "none", stroke: "currentColor", strokeWidth: "1.8", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("svg", { viewBox: "0 0 24 24", width: "20", height: "20", fill: "none", stroke: "currentColor", strokeWidth: "1.6", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { d: "M6 7h12l1.5 13.5a1 1 0 0 1-1 1.1h-13a1 1 0 0 1-1-1.1L6 7z" }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { d: "M9 10V6a3 3 0 0 1 6 0v4" })
       ] }),
@@ -13246,7 +13246,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
   function Header() {
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-header", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-brand", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Link, { to: "/", className: "lx-brand", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-brand-mark", children: "\u0646" }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-brand-text", children: [
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("strong", { children: "\u0645\u062D\u0645\u062F \u0646\u062C\u0627\u062D" }),
@@ -13255,23 +13255,29 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-header-actions", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(CartButton, {}),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-header-wa", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: "\u0648\u0627\u062A\u0633\u0627\u0628" })
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-header-wa", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", "aria-label": "\u062A\u0648\u0627\u0635\u0644 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("svg", { viewBox: "0 0 24 24", width: "19", height: "19", fill: "currentColor", "aria-hidden": "true", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { d: "M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z" }) }) })
       ] })
     ] });
   }
   function FloatingWa() {
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-fab", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", "aria-label": "\u062A\u0648\u0627\u0635\u0644 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("svg", { viewBox: "0 0 24 24", width: "26", height: "26", fill: "currentColor", "aria-hidden": "true", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("path", { d: "M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z" }) }) });
   }
+  function PhotoFrame({ item, big }) {
+    return /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: big ? "lx-frame lx-frame-lg" : "lx-frame", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: item.photo, alt: item.name, loading: "lazy" }) });
+  }
   function Tile({ item }) {
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Link, { to: `/p/${item.n}`, className: "lx-tile lx-anim", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-photo", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: item.photo, alt: item.name, loading: "lazy" }),
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-photo", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(PhotoFrame, { item }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: item.n, small: true })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: item.name }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-row", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-meta", children: item.size }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-cta", children: "\u0627\u0637\u0644\u0628 \u2190" })
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-body", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: item.name }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-meta", children: [
+          item.size,
+          " \xB7 ",
+          kindLabel(item.kind)
+        ] })
       ] })
     ] });
   }
@@ -13294,13 +13300,32 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const featured = FEATURED.map((n) => products.find((p) => p.n === n)).filter(Boolean);
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-hero", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { className: "lx-hero-img", src: hero_default, alt: "\u0639\u0637\u0631 \u0641\u0627\u062E\u0631" }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-hero-overlay", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-hero-kicker", children: STORE.latin }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { className: "lx-hero-img", src: hero_default, alt: "", "aria-hidden": "true" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-hero-veil" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-hero-content", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
+            STORE.latin,
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
+          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h1", { className: "lx-title", children: STORE.name }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-sub", children: "\u062A\u0634\u0643\u064A\u0644\u0629 \u0641\u0627\u062E\u0631\u0629 \u0645\u0646 \u0627\u0644\u0639\u0637\u0648\u0631 \u0648\u0627\u0644\u0633\u0628\u0631\u0627\u064A. \u0623\u0636\u0641 \u0645\u0627 \u064A\u0639\u062C\u0628\u0643 \u0625\u0644\u0649 \u0637\u0644\u0628\u0643 \u0648\u0623\u0631\u0633\u0644\u0647 \u0643\u0644\u0647 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628 \u0628\u0636\u063A\u0637\u0629 \u0648\u0627\u062D\u062F\u0629." }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-btn-gold lx-hero-cta", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: "\u0627\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
-        ] })
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-sub", children: "\u062A\u0634\u0643\u064A\u0644\u0629 \u0641\u0627\u062E\u0631\u0629 \u0645\u0646 \u0627\u0644\u0639\u0637\u0648\u0631 \u0648\u0627\u0644\u0633\u0628\u0631\u0627\u064A\u060C \u0645\u062E\u062A\u0627\u0631\u0629 \u0628\u0639\u0646\u0627\u064A\u0629. \u0623\u0636\u0641 \u0645\u0627 \u064A\u0639\u062C\u0628\u0643 \u0625\u0644\u0649 \u0637\u0644\u0628\u0643 \u0648\u0623\u0631\u0633\u0644\u0647 \u0643\u0644\u0647 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628 \u0628\u0636\u063A\u0637\u0629 \u0648\u0627\u062D\u062F\u0629." }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-hero-ctas", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-btn-gold", href: "#catalog", onClick: (e2) => {
+              e2.preventDefault();
+              document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" });
+            }, children: "\u062A\u0635\u0641\u062D \u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C" }),
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-btn-ghost", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: "\u0627\u0637\u0644\u0628 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
+          ] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-hero-scroll", "aria-hidden": "true", children: "\u2039" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-band", "aria-hidden": "true", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u0645\u0646\u062A\u062C\u0627\u062A \u0623\u0635\u0644\u064A\u0629" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("b", { children: "\u2726" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u062A\u0648\u0635\u064A\u0644 \u062D\u062A\u0649 \u0628\u0627\u0628 \u0627\u0644\u0628\u064A\u062A" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("b", { children: "\u2726" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: "\u0637\u0644\u0628 \u0633\u0631\u064A\u0639 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628" })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-cats", role: "group", "aria-label": "\u0627\u0644\u0623\u0642\u0633\u0627\u0645", children: cats.map((c) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
         "button",
@@ -13308,29 +13333,39 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           type: "button",
           className: kind === c.key ? "lx-cat is-active" : "lx-cat",
           onClick: () => setKind(c.key),
-          children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-cat-circle", children: c.label })
+          children: c.label
         },
         c.key
       )) }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-section-head", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0645\u062E\u062A\u0627\u0631\u0627\u062A \u0645\u0645\u064A\u0632\u0629" }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-section-line" })
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
+          "\u0627\u062E\u062A\u064A\u0627\u0631\u0627\u062A\u0646\u0627",
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0645\u062E\u062A\u0627\u0631\u0627\u062A \u0645\u0645\u064A\u0632\u0629" })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-strip", children: featured.map((p) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Link, { to: `/p/${p.n}`, className: "lx-card lx-anim", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-card-photo", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: p.photo, alt: p.name, loading: "lazy" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-photo", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(PhotoFrame, { item: p }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: p.n, small: true })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-card-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: p.name }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-card-meta", children: [
-          p.size,
-          " \xB7 ",
-          kindLabel(p.kind)
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-body", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-tile-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: p.name }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-tile-meta", children: [
+            p.size,
+            " \xB7 ",
+            kindLabel(p.kind)
+          ] })
         ] })
       ] }, p.n)) }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-section-head", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0643\u0644 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A" }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-section-line" })
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-section-head", id: "catalog", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
+          "\u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C",
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0643\u0644 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A" })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-tools", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
@@ -13355,22 +13390,22 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       shown.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-empty", children: "\u0644\u0627 \u062A\u0648\u062C\u062F \u0645\u0646\u062A\u062C\u0627\u062A \u0645\u0637\u0627\u0628\u0642\u0629 \u0644\u0628\u062D\u062B\u0643. \u062C\u0631\u0651\u0628 \u0627\u0633\u0645\u064B\u0627 \u0622\u062E\u0631." }) : /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-grid", children: shown.map((p) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Tile, { item: p }, p.n)) }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-share", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-share-text", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
+            "\u0634\u0627\u0631\u0643\u0646\u0627",
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
+          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h2", { className: "lx-h2", children: "\u0634\u0627\u0631\u0643 \u0627\u0644\u0645\u0648\u0642\u0639" }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: "\u0647\u0630\u0627 \u0627\u0644\u0643\u0648\u062F \u064A\u0641\u062A\u062D \u0627\u0644\u0643\u062A\u0627\u0644\u0648\u062C \u0645\u0628\u0627\u0634\u0631\u0629 \u0639\u0644\u0649 \u0627\u0644\u0645\u0648\u0628\u0627\u064A\u0644. \u0627\u0637\u0628\u0639\u0647 \u0648\u0636\u0639\u0647 \u0641\u064A \u0627\u0644\u0645\u062D\u0644 \u0623\u0648 \u0639\u0644\u0649 \u0627\u0644\u0643\u0631\u0648\u062A." })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-qr", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: qr_default, alt: "\u0643\u0648\u062F QR \u064A\u0641\u062A\u062D \u0645\u0648\u0642\u0639 \u0645\u062D\u0645\u062F \u0646\u062C\u0627\u062D \u0644\u0644\u0639\u0637\u0648\u0631" }) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-closing", children: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u063A\u064A\u0631 \u0645\u0639\u0631\u0648\u0636\u0629 \u062D\u0627\u0644\u064A\u064B\u0627 \u2014 \u0627\u0633\u0623\u0644 \u0639\u0646 \u0633\u0639\u0631 \u0623\u064A \u0645\u0646\u062A\u062C \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628. \u0627\u0644\u0637\u0644\u0628 \u064A\u0635\u0644 \u0631\u0633\u0627\u0644\u0629 \u062C\u0627\u0647\u0632\u0629 \u0628\u0623\u0633\u0645\u0627\u0621 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A \u0648\u0623\u0643\u0648\u0627\u062F\u0647\u0627 \u0648\u0643\u0645\u064A\u0627\u062A\u0647\u0627." })
-    ] });
-  }
-  function Section({ title, children, defaultOpen }) {
-    const [open, setOpen] = (0, import_react30.useState)(!!defaultOpen);
-    return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-acc", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("button", { type: "button", className: "lx-acc-head", onClick: () => setOpen(!open), "aria-expanded": open, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: title }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: open ? "lx-acc-arrow is-open" : "lx-acc-arrow", children: "\u2039" })
-      ] }),
-      open && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-acc-body", children })
+      /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("footer", { className: "lx-footer", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-brand-mark lx-brand-mark-sm", children: "\u0646" }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-footer-name", children: STORE.name }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-footer-line", children: "\u0627\u0644\u0623\u0633\u0639\u0627\u0631 \u063A\u064A\u0631 \u0645\u0639\u0631\u0648\u0636\u0629 \u062D\u0627\u0644\u064A\u064B\u0627 \u2014 \u0627\u0633\u0623\u0644 \u0639\u0646 \u0633\u0639\u0631 \u0623\u064A \u0645\u0646\u062A\u062C \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628." }),
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("a", { className: "lx-footer-wa", href: `https://wa.me/${WA_NUMBER}`, target: "_blank", rel: "noreferrer", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { dir: "ltr", children: WA_DISPLAY }) })
+      ] })
     ] });
   }
   function Detail({ item }) {
@@ -13379,13 +13414,20 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     (0, import_react30.useEffect)(() => {
       window.scrollTo(0, 0);
     }, []);
-    const description = item.description || `${kindLabel(item.kind)} ${item.name.replace(/^(عطر|برفان|سبراي)\s*/, "")} \u0645\u0646 \u062A\u0634\u0643\u064A\u0644\u0629 ${STORE.name} \u0627\u0644\u0645\u062E\u062A\u0627\u0631\u0629 \u0628\u0639\u0646\u0627\u064A\u0629. \u0627\u0637\u0644\u0628\u0647 \u0627\u0644\u0622\u0646 \u0648\u064A\u0635\u0644\u0643 \u062D\u062A\u0649 \u0628\u0627\u0628 \u0627\u0644\u0628\u064A\u062A.`;
-    const badges = item.features || ["\u0645\u0646\u062A\u062C \u0623\u0635\u0644\u064A", "\u0637\u0644\u0628 \u0633\u0631\u064A\u0639 \u0639\u0628\u0631 \u0648\u0627\u062A\u0633\u0627\u0628", "\u062A\u0648\u0635\u064A\u0644 \u062D\u062A\u0649 \u0628\u0627\u0628 \u0627\u0644\u0628\u064A\u062A"];
+    const description = item.description || `${kindLabel(item.kind)} ${item.name.replace(/^(عطر|برفان|سبراي)\s*/, "")} \u0645\u0646 \u062A\u0634\u0643\u064A\u0644\u0629 ${STORE.name}. \u0627\u0637\u0644\u0628\u0647 \u0627\u0644\u0622\u0646 \u0648\u064A\u0635\u0644\u0643 \u062D\u062A\u0649 \u0628\u0627\u0628 \u0627\u0644\u0628\u064A\u062A.`;
+    const badges = item.features || ["\u0645\u0646\u062A\u062C \u0623\u0635\u0644\u064A", "\u062A\u0648\u0635\u064A\u0644 \u062D\u062A\u0649 \u0628\u0627\u0628 \u0627\u0644\u0628\u064A\u062A"];
+    const infoRows = [
+      { label: "\u0646\u0648\u0639 \u0627\u0644\u0639\u0637\u0631", value: kindLabel(item.kind) },
+      { label: "\u0627\u0644\u062D\u062C\u0645", value: item.size }
+    ];
+    if (item.brand) infoRows.push({ label: "\u0627\u0644\u0645\u0627\u0631\u0643\u0629", value: item.brand });
+    if (item.occasions) infoRows.push({ label: "\u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0627\u062A", value: item.occasions });
+    infoRows.push({ label: "\u0643\u0648\u062F \u0627\u0644\u0645\u0646\u062A\u062C", value: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { dir: "ltr", children: item.code }) });
     return /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Link, { to: "/", className: "lx-back", children: "\u2192 \u0643\u0644 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A" }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-lp", children: [
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-lp-gallery", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-lp-photo", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: photos[active], alt: item.name }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-lp-stage", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("img", { src: photos[active], alt: item.name }) }),
           photos.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-lp-thumbs", children: photos.map((ph, i) => /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(
             "button",
             {
@@ -13399,13 +13441,18 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           )) })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-lp-info", children: [
-          item.brand && /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-lp-brand", children: item.brand }),
+          item.brand && /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-kicker lx-kicker-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {}),
+            item.brand,
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("i", {})
+          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("h1", { className: "lx-lp-name", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { children: item.name }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { className: "lx-lp-chips", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: item.size }),
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("b", { children: "\u2726" }),
+            /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { children: kindLabel(item.kind) })
+          ] }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { className: "lx-lp-desc", children: description }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-lp-badges", children: badges.map((b) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-badge", children: [
-            "\u2726 ",
-            b
-          ] }, b)) }),
           /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-lp-price", children: SHOW_PRICES && item.price ? /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(import_jsx_runtime27.Fragment, { children: [
             /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("strong", { children: [
               item.price,
@@ -13416,28 +13463,16 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               " \u062C\u0646\u064A\u0647"
             ] })
           ] }) : /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-lp-askprice", children: "\u0627\u0644\u0633\u0639\u0631 \u0639\u0646\u062F \u0627\u0644\u0637\u0644\u0628 \u2014 \u0627\u0633\u0623\u0644 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: item.n })
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(AddBtn, { n: item.n }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-lp-badges", children: badges.map((b) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("span", { className: "lx-badge", children: [
+            "\u2726 ",
+            b
+          ] }, b)) })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-lp-sections", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Section, { title: "\u0645\u0643\u0648\u0646\u0627\u062A \u0627\u0644\u0639\u0637\u0631 \u0648\u0627\u0644\u0646\u0648\u062A\u0627\u062A \u0627\u0644\u0639\u0637\u0631\u064A\u0629", defaultOpen: !!item.notes, children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: item.notes || "\u062A\u0641\u0627\u0635\u064A\u0644 \u0627\u0644\u0646\u0648\u062A\u0627\u062A \u0627\u0644\u0639\u0637\u0631\u064A\u0629 \u0644\u0647\u0630\u0627 \u0627\u0644\u0645\u0646\u062A\u062C \u0633\u062A\u064F\u0636\u0627\u0641 \u0642\u0631\u064A\u0628\u064B\u0627." }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Section, { title: "\u0646\u0648\u0639 \u0627\u0644\u0639\u0637\u0631", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { children: [
-            kindLabel(item.kind),
-            item.brand ? ` \xB7 ${item.brand}` : ""
-          ] }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Section, { title: "\u0627\u0644\u062D\u062C\u0645", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: item.size }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)(Section, { title: "\u0645\u0646\u0627\u0633\u0628 \u0644\u0623\u064A \u0645\u0646\u0627\u0633\u0628\u0627\u062A", children: /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("p", { children: item.occasions || "\u0645\u0646\u0627\u0633\u0628 \u0644\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645 \u0627\u0644\u064A\u0648\u0645\u064A \u0648\u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0627\u062A." }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)(Section, { title: "\u0645\u0639\u0644\u0648\u0645\u0627\u062A \u0625\u0636\u0627\u0641\u064A\u0629", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { children: [
-              "\u0643\u0648\u062F \u0627\u0644\u0645\u0646\u062A\u062C: ",
-              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { dir: "ltr", children: item.code })
-            ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { children: [
-              "\u0644\u0644\u0627\u0633\u062A\u0641\u0633\u0627\u0631 \u0639\u0646 \u0623\u064A \u062A\u0641\u0627\u0635\u064A\u0644 \u0623\u062E\u0631\u0649 \u0631\u0627\u0633\u0644\u0646\u0627 \u0639\u0644\u0649 \u0648\u0627\u062A\u0633\u0627\u0628 ",
-              /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("bdi", { dir: "ltr", children: WA_DISPLAY }),
-              "."
-            ] })
-          ] })
-        ] })
+        /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("div", { className: "lx-lp-facts", children: infoRows.map((r) => /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("div", { className: "lx-fact", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-fact-label", children: r.label }),
+          /* @__PURE__ */ (0, import_jsx_runtime27.jsx)("span", { className: "lx-fact-value", children: r.value })
+        ] }, r.label)) })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime27.jsxs)("p", { className: "lx-closing", children: [
         STORE.name,
