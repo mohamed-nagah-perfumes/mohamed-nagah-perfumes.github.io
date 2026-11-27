@@ -4905,7 +4905,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("fonts/amiri-400-arabic.woff2") format("woff2");
+  src: url(fonts/amiri-400-arabic.woff2) format("woff2");
   unicode-range:
     U+0600-06FF,
     U+0750-077F,
@@ -4964,7 +4964,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("fonts/amiri-400-latin.woff2") format("woff2");
+  src: url(fonts/amiri-400-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -4991,7 +4991,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("fonts/amiri-700-arabic.woff2") format("woff2");
+  src: url(fonts/amiri-700-arabic.woff2) format("woff2");
   unicode-range:
     U+0600-06FF,
     U+0750-077F,
@@ -5050,7 +5050,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("fonts/amiri-700-latin.woff2") format("woff2");
+  src: url(fonts/amiri-700-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5077,7 +5077,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("fonts/cormorant-500-latin.woff2") format("woff2");
+  src: url(fonts/cormorant-500-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5104,7 +5104,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("fonts/cormorant-600-latin.woff2") format("woff2");
+  src: url(fonts/cormorant-600-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5131,7 +5131,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("fonts/ibm-300-arabic.woff2") format("woff2");
+  src: url(fonts/ibm-300-arabic.woff2) format("woff2");
   unicode-range:
     U+0600-06FF,
     U+0750-077F,
@@ -5190,7 +5190,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("fonts/ibm-300-latin.woff2") format("woff2");
+  src: url(fonts/ibm-300-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5217,7 +5217,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("fonts/ibm-400-arabic.woff2") format("woff2");
+  src: url(fonts/ibm-400-arabic.woff2) format("woff2");
   unicode-range:
     U+0600-06FF,
     U+0750-077F,
@@ -5276,7 +5276,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("fonts/ibm-400-latin.woff2") format("woff2");
+  src: url(fonts/ibm-400-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5303,7 +5303,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("fonts/ibm-500-arabic.woff2") format("woff2");
+  src: url(fonts/ibm-500-arabic.woff2) format("woff2");
   unicode-range:
     U+0600-06FF,
     U+0750-077F,
@@ -5362,7 +5362,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("fonts/ibm-500-latin.woff2") format("woff2");
+  src: url(fonts/ibm-500-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5389,7 +5389,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("fonts/ibm-700-arabic.woff2") format("woff2");
+  src: url(fonts/ibm-700-arabic.woff2) format("woff2");
   unicode-range:
     U+0600-06FF,
     U+0750-077F,
@@ -5448,7 +5448,7 @@ button.file-compare-head {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("fonts/ibm-700-latin.woff2") format("woff2");
+  src: url(fonts/ibm-700-latin.woff2) format("woff2");
   unicode-range:
     U+0000-00FF,
     U+0131,
@@ -5913,6 +5913,19 @@ button.file-compare-head {
 @media (min-width: 960px) {
   .lx-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .lx-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 26px 22px;
+    padding: 4px 48px 10px;
+  }
+}
+@media (min-width: 1700px) {
+  .lx-grid {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 4px 72px 10px;
   }
 }
 .lx-tile {
